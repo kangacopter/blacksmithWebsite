@@ -1,0 +1,252 @@
+
+body {
+    font-family: "Cormorant Garamond", Garamond, Georgia, serif;
+    color: #3B1717;
+    background-image: url('../img/dragonBg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right; 
+    background-size: contain;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: underline;
+    color: #B8492A;
+    text-emphasis:
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+hr {
+       display: block;
+       position: relative;
+       padding: 0;
+       margin: 8px auto;
+       height: 0;
+       width: 50%;
+       max-height: 0;
+       font-size: 1px;
+       line-height: 0;
+       clear: both;
+       border: none;
+       border-top: 2px solid #B8492A ;
+    
+}
+
+#header {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+    margin-bottom: 50px;
+
+
+}
+
+#leftContent {
+    background-color: #771201;
+    width: 44%;
+    padding: 3%;
+    height: 100%;
+    border-top-left-radius: 3px;
+    float: left;
+    background: rgba(119, 18, 1, .4);
+
+}
+
+#rightContent {
+    background-color: #771201;
+    width: 44%;
+    padding: 3%;
+    height: 100%;
+    float: right;
+    background: rgba(119, 18, 1, .1);
+    border-top-right-radius: 3px;
+
+}
+
+#footer {
+    width: 96%;
+    height: 30%;
+    bottom: 0;
+    position: static;
+    margin: 0 auto;
+    padding: 2%;
+    background: rgba(130, 130, 130, .6);
+    overflow: hidden;
+    text-align: center;
+        border-top: 2px solid #771201;
+}
+
+#container img {
+    width: 95%;
+    border: 5px solid #771201;
+    box-shadow: 2px 2px 5px #3B1717;
+}
+
+
+@font-face {
+    font-family: Skia;
+    src: url(../resource/Skia.ttf);
+}
+
+h1 {
+    font-family: Skia, Tahoma, sans-serif;
+        font-variant: small-caps;
+    font-size: 36px;
+    color: #771201;
+    text-shadow: 1px 1px 1px #3B1717;
+
+}
+
+h2 {
+    font-family: Skia, Tahoma, sans-serif;
+    font-size: 28px;
+    color: #771201;
+    text-shadow: 1px 1px 1px #3B1717;
+        font-variant: small-caps;
+
+}
+
+h3 {
+    font-family: Skia, Tahoma, sans-serif;
+    font-size: 18px;
+    color: #771201;
+    text-shadow: 1px 1px 1px #3B1717;
+        font-variant: small-caps;
+}
+
+.button {
+    width: 170px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #B8492A;
+    font-size: 16px;
+    font-family: "Skia", Arial, sans-serif;
+    font-variant: small-caps;
+    color: #dda773;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #771201;
+}
+
+#logo {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.price {
+    text-align: right;
+    margin-right: 10%;
+    font-size: 20px;
+}
+
+.topnav {
+    border-bottom: 2px solid #771201;
+}
+
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin-right: 0;
+    margin-top: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #828282;
+    font-family: Skia;
+    font-variant: small-caps;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: right;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #771201;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #B8492A;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+    #logo {
+    width: 100%;
+    height: auto;
+
+}
+.button {
+    color: #3B1717;
+}
+#leftContent {
+    width: 94%;
+}
+#rightContent {
+    width: 94%;
+
+}
+#container {
+height: 100%;
+}
+
+    
+  ul.topnav li {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
